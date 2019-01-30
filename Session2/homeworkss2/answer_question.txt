@@ -1,0 +1,22 @@
+Trả lời câu hỏi:
+Câu 1:
+-Trong Python Boolean là những giá trị, có 2 giá trị boolean là True hoặc False
+-3 VD : 5 > 7 False , 5 < 7 True , 5 == 7 False , 5 != 7 False.
+Câu 2:
+-Folow Char là biểu đồ biểu diễn các quá trình thực hiện 1 chương trình.
+Mỗi bước trong quy trình được thể hiện bằng một biểu tượng khác nhau và chứa một mô tả ngắn về bước quy trình. 
+Các ký hiệu biểu đồ luồng được liên kết với nhau bằng các mũi tên hiển thị hướng dòng quy trình.
+Gồm 1 số thành phần:start,end,quy trình,điều kiện,thông báo,..
+-Sở đồ trong file ảnh
+Câu 3:
+-Điều kiện lồng nhau là điều kiện mà bên trong nó có thêm điều kiện khác.
+-Viết 1 đoạn mã sử dụng điều kiện lồng nhau
+if year_old < 10:
+    print("teenager")
+else:
+    if year_old > 30:
+        print("adult")
+    else:
+        print("teenager")
+		
+		
