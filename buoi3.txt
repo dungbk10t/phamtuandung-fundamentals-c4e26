@@ -1,0 +1,124 @@
+Thứ 2, 28/1/2018
+Buổi 3 - ss2 :Conditional statement - các câu lệnh điều kiện
+
+Bài tập buổi trước : Vẽ đường đi xoắn ốc
+#Vẽ đường đi xoắn ốc của rùa:
+
+from turtle import *
+shape("turtle")
+
+speed(10)
+#C1: 
+for i in range(10,1000,10):
+    forward(i) 
+    left(90)
+#C2:
+# for i in range(1000):
+#     forward(i*5) 
+#     left(90)
+#C3:
+# d = 10
+# for i in range(1000):
+#      forward(d) 
+#      left(90)
+#      d+=10
+mainloop()
+
+Bài tập 1: Nhập vào 1 số kiểm tra số đó  > 13
+
+n = int(input("Enter a number ?"))
+if n > 13:
+    print(n,'> 13')
+else :
+    print(n,'<= 13') 
+	
+Bài tập 2: Nhập vào 1 số kiểm tra số đó  = 13
+#C1:
+n = int(input("Enter a number ?"))
+if n == 13:
+    print(n,'= 13')
+else :
+    print(n,'not equal 13')
+#C2:
+n = int(input("Enter a number ?"))
+if n != 13:
+    print(n,'not equals 13')
+else :
+    print(n,'equals 13') 	
+	
+Bài tập 3: Viết chương trình sinh 1 số ngẫu nhiên
+
+from random import randint
+print(randint(0, 1000))
+
+Bài tập 4: Viết chương trình sinh 1 số ngẫu nhiên n
+	n < 30 print raning
+	n>=30 and n<60 print claudy
+	60 <= n < 100 swing
+
+#Bài 4:
+
+from random import randint #gọi hàm randint trong thư viện import. Hàm randint là hàm sinh sô ngẫu nhiên
+#trong khoảng a,b. randint(a,b)
+claudy = '''                _                                  
+              (`  ).                   _           
+             (     ).              .:(`  )`.       
+)           _(       '`.          :(   .    )      
+        .=(`(      .   )     .--  `.  (    ) )      
+       ((    (..__.:'-'   .+(   )   ` _`  ) )                 
+`.     `(       ) )       (   .  )     (   )  ._   
+  )      ` __.:'   )     (   (   ))     `-'.-(`  ) 
+)  )  ( )       --'       `- __.'         :(      )) 
+.-'  (_.'          .')                    `(    )  ))
+                  (_  )                     ` __.:'          
+                                        
+--..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.-a:f--.'''
+n = randint(0, 100)
+if n < 30: 
+    print("ranny")
+elif n < 60:
+    print(claudy)
+elif n < 100:
+    print("sunny")
+	
+#key search texttart claudy	
+
+Bài 5: Kiểm tra 1 số có phải 1 số nguyên tố hay không
+
+n = int(input("Enter a number ?")) 
+if n < 2: 
+    print(n,"khong phai nguyen to")
+elif n == 2:
+    print(n,"la so nguyen to")
+elif n % 2 == 0:
+    print(n,"khong phai so nguyen to")
+for i in range(3,n-1,2):
+    if n % i == 0:
+        print(n,"Khong la so nguyen to")
+
+else:
+    print(n,"la so nguyen to")    
+	
+Bài 6: Kiểm tra 1 số có phải số chẵn
+
+n = int(input("Enter a number ?")) 
+if n % 2 == 0:
+    print(n," la so chan")
+else:
+    print(n," khong la so chan") 
+	
+Chủ đề học: FLowchart: Sơ đồ khối
+
+#Bài 7: User name and password
+
+username = input("Enter username: ")
+if(username == "C4E"):
+    password = input("Enter password: ")
+    if(password == "celerbrate"):
+        print("Well come to Facebook !")
+    else: 
+        print("Password is incorrect !")    
+else: 
+    print("Login error !")  
+	
+#Hàm ẩn password : key  search getpass	
