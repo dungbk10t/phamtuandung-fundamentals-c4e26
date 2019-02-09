@@ -1,0 +1,17 @@
+Home work Session 3: Hạn nộp 10/2/2019
+
+A - And then answer the following questions:
+Câu 1: What is nested list?
+	Danh sách lồng nhau là một danh sách xuất hiện dưới dạng một phần tử của 
+danh sách khác.
+VD: nested = ["hello", 2.0, 5, [10, 20]]. 
+Trong "nested", phần tử có index 3 là nested list. Nếu ta print(nested[3]) ta nhận được [10, 20].
+	2 bước để trích xuất phần tử danh sách lòng nhau:
+B1: Trích xuất danh sách lồng nhau
+B2: Trích xuất mục quan tâm.
+
+VD: print(nested[3][1]) OUTPUT: 20
+print(nested[3][0]) OUTPUT: 10
+
+Câu 2:Can a list store both integers and strings in it
+TL: Có . Một danh sách có thể lưu trữ cả số nguyên và chuỗi.
