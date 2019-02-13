@@ -12,7 +12,7 @@ for (key,value) in inventory.items():
     print(key,value,sep = " : ")
 #3:remove('dagger') from the list of items stored under the 'backpack' key.
 print("\n#3.After remove value dagger of key backpack from dict\n")
-del inventory["backpack"][1]
+inventory["backpack"].remove("dagger")
 for (key,value) in inventory.items():
     print(key,value,sep = " : ")
 #4:Add 50 to the number stored under the 'gold' key.
