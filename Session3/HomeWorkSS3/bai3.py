@@ -2,9 +2,7 @@
 
 import random
 
-WORDS = ["python","jumble","game","word",
-
-]
+WORDS = ["python","jumble","game","word",]
 word = random.choice(WORDS)
 
 correct = word

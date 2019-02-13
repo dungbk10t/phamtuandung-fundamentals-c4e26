@@ -26,4 +26,4 @@ for i in range(len(items)):
 # hobbys.append(new_hobby) 
 # print(*hobbys, sep =', ') # mặc định là đấu cách, thay bằng dấu ,
 
-
+#Thêm 1 phần tử vào 1 vị trí bất kì: insert
