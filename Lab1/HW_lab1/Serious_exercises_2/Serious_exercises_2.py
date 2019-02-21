@@ -19,10 +19,10 @@ table = soup.find("table", id = "tableContent")
 #Step 4: Extract ROI
 td_list = table.find_all("td","b_r_c")
 news_list = []
-for i in td_list:
-    a = i.string
-    news = {"Kết quả hoạt động kinh doanh": a}
-    news_list.append(news)
+for k in td_list:
+    data = k.string
+    news = {"Kết quả hoạt động kinh doanh": data}
+    news_list.append(data)
 #Step 5: save data(excel)
 import pyexcel
 pyexcel.save_as(records=news_list, dest_file_name="ROI.xlsx")
