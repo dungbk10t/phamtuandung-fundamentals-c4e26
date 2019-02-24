@@ -1,0 +1,31 @@
+C1: hy should we use functions at all?
+Hàm là một khối mã có thể sử dụng lại có tổ chức, được sử dụng để thực hiện một hành động liên quan duy nhất. 
+Các chức năng cung cấp tính mô đun tốt hơn cho ứng dụng của bạn và mức độ tái sử dụng mã cao.
+C2:How to define/declare a function?
++)Các khối chức năng bắt đầu bằng từ khóa def theo sau là tên hàm và dấu ngoặc đơn (()).
++)Bất kỳ tham số hoặc đối số đầu vào nào cũng phải được đặt trong các dấu ngoặc đơn này. Bạn cũng có thể định nghĩa các tham số bên trong các dấu ngoặc đơn này.
++)Câu lệnh đầu tiên của hàm có thể là câu lệnh tùy chọn - chuỗi tài liệu của hàm hoặc chuỗi doc .
++)Khối mã trong mỗi hàm bắt đầu bằng dấu hai chấm (:) và được thụt lề.
++)Câu lệnh return [biểu thức] thoát khỏi một hàm, tùy ý gửi lại một biểu thức cho người gọi. Một câu lệnh return không có đối số giống như return return.
+C3:How to call/use a function?
+VD: def add(a,b):
+		return a+b
+	gọi hàm:def(1,2)	
+C4:What is return, why and how do we use it?
+Kiểu return trong hàm cho phép hàm trả về 1 giá trị. Phải sử dụng khi muốn hàm tạo ra 1 giá trị khi chương trình gọi hàm.
+C5:Do we have to use return in every function?
+Không. Có loại hàm:
+#fruitful funtion: Hàm trả về KQ
+#non-fruitful funtion: Hàm không trả về KQ
+Tùy chắc năng mà có hàm là 1 trong 2 loại trên
+C7:What are function arguments/parameters, why and how we use it?
+Nếu bạn sử dụng một returncâu lệnh không có đối số, hàm sẽ trả về None.
+C8:How to use function from a different file other than our currently working file?
+import [filename]
+Call funtion:
+[filename].[name of fun]() 
+
+
+
+
+
