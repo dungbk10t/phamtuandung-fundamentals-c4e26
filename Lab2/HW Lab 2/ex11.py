@@ -8,30 +8,27 @@ def is_inside(x, y, x1, y1, width_h, height_t):
     y2 = y1
     y3 = y4 = y1 - height_t
     #Area of rectangle ABCD  
-    A = width_h*height_t
+    S = width_h*height_t
     # print(A)
     #Area of triangle PAB  
-    A1 = area(x, y, x1, y1, x2, y2) 
-    # print(A1)
+    S1 = area(x, y, x1, y1, x2, y2) 
+    # print(S1)
     #Area of triangle PBD
-    A2 = area(x, y, x2, y2, x4, y4) 
-    # print(A2)
+    S2 = area(x, y, x2, y2, x4, y4) 
+    # print(S2)
     #Area of triangle PCD  
-    A3 = area(x, y, x3, y3, x4, y4) 
-    # print(A3)
+    S3 = area(x, y, x3, y3, x4, y4) 
+    # print(S3)
     #Area of triangle PAC  
-    A4 = area(x, y, x1, y1, x3, y3) 
-    # print(A4)
-    if(A == A1 + A2 + A3 + A4):
-        print("Given point lies inside the rectangle") 
+    S4 = area(x, y, x1, y1, x3, y3) 
+    # print(S4)
+    if(S == S1 + S2 + S3 + S4):
         return True
     else:
-        print("Given point does not lie on the rectangle")
         return False
-is_inside(200,-120,140,-60,100,200)
-# # Anh Đức ơi em không hiểu nếu để đoạn code dưới thì lại ra dòng
-# # "Given point does not lie on the rectangle."
-# if(is_inside==True):
-#     print("Given point lies inside the rectangle") 
-# else:
-#     print("Given point does not lie on the rectangle")   
+
+test = is_inside(200,-120,140,-60,100,200)
+if(test==True):
+    print("Given point lies inside the rectangle") 
+else:
+    print("Given point does not lie on the rectangle")   
